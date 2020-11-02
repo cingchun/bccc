@@ -1,0 +1,28 @@
+%nprocshared=4
+%mem=30GB
+%chk=C2H4_opt.chk
+# opt(z-matrix) freq b3lyp/cc-pVDZ
+
+sto-6g 6D meta_Lowdin trans_dipo
+
+0 1
+ C              
+ H                  1            B1
+ H                  1            B2    2            A1
+ C                  1            B3    3            A2    2            D1    0
+ H                  4            B4    1            A3    3            D2    0
+ H                  4            B5    1            A4    3            D3    0
+
+   B1             1.07000000
+   B2             1.07000000
+   B3             1.10000000
+   B4             1.07000000
+   B5             1.07000000
+   A1           119.88652707
+   A2           119.88652674
+   A3           120.22694618
+   A4           119.88652674
+   D1           180.00000000
+   D2             0.00000000
+   D3           180.00000000
+

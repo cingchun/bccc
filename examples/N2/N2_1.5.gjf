@@ -1,0 +1,9 @@
+%chk=N2_1.5.chk
+#
+
+sto-6g 6D meta_Lowdin trans_dipo
+
+0 1
+ N                 0.0   0.0    0.0
+ N                 0.0   0.0    1.5875
+

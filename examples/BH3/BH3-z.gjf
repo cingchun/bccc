@@ -1,0 +1,18 @@
+%nprocshared=4
+%mem=30GB
+%chk=BH3-z.chk
+# opt=z-matrix freq b3lyp/cc-pvdz
+
+sto-6g
+
+0 1
+ B              
+ H                  1            B1
+ H                  1            B1    2            A1
+ H                  1            B1    3            A2    2            D1    0
+
+   B1             1.20431000
+   A1           120.00000129
+   A2           119.99999743
+   D1           180.00000000
+

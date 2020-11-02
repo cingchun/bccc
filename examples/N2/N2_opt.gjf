@@ -1,0 +1,12 @@
+%nprocshared=4
+%mem=24GB
+%chk=N2_opt.chk
+# opt freq b3lyp/cc-pVDZ 6D
+
+sto-6g 6D meta_Lowdin trans_dipo
+
+0 1
+ N                 0.0   0.0    0.0
+ N                 0.0   0.0    1.0943
+
+

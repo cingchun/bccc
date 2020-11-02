@@ -1,0 +1,17 @@
+%chk=C:\Users\Qingchun Wang\Documents\PyCharmProjects\bccc-3\bccc\examples\5-pair\H2-5\H4-H6\H4-H6.chk
+#
+
+sto-6g 6D meta_Lowdin trans_dipo
+
+0 1
+ H                 0.0   0.0   -7.5
+ H                 0.0   0.0   -6.0
+ H                 0.0   0.0   -4.5
+ H                 0.0   0.0   -3.0
+ H                 0.0   0.0   -1.5
+ H                 0.0   0.0   0.0
+ H                 0.0   0.0   100.0
+ H                 0.0   0.0   101.5
+ H                 0.0   0.0   103.0
+ H                 0.0   0.0   104.5
+

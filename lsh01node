@@ -1,0 +1,51 @@
+
+****Welcome to Cluster of ShuhuaGroup****
+
+--------------------------------------------------
+Node  CPU  GHz  Memory Scratch  CentOS   Owner
+--------------------------------------------------
+lsh01  8   1.7    16G    889G     7.4
+cu01  48   2.5   256G    939G     7.6    zhigang
+cu02  48   2.5   256G    939G     7.6    organic
+cu03  16   2.6   128G    1.8T     7.4    qingchun
+cu04  16   2.6    64G    470G     7.4    zxli
+cu06  16   2.6    64G    470G     6.3    bkhong
+cu07  16   2.6    64G    470G     7.4    duan
+cu08  16   2.6    64G    459G     7.6    organic
+cu09  16   2.6    64G    470G     7.4    liaokang
+cu10  48   2.5   256G    939G     7.6    liaokang
+cu11  24   2.5   256G    939G     7.6    zcheng
+cu12  12   2.6    32G    459G     7.4    greenhand
+cu13  12   2.6    32G    459G     7.4    zxli
+cu14  12   2.6    32G    459G     7.4    zcheng
+cu15  12   2.6    32G    459G     7.4    bkhong
+cu16  12   2.6    32G    459G    RH6.5   fufangjia
+cu17  12   2.6    32G    459G     7.4    yuqiwang
+cu18  16   2.6    32G    459G     7.4    organic
+cu19  16   2.6    32G    459G     7.4    organic
+cu20  16   2.6    64G    459G     7.4    duan
+cu21  16   2.6    64G    441G     7.6    fufangjia
+cu22  16   2.6    64G    440G     7.4    wtzou
+cu23  16   2.6    64G    441G    RH6.5   organic
+cu24  16   2.6   128G    440G     7.4    jxzou
+cu25  16   2.6    64G    440G     7.4    jxzou
+cu26  24   2.5   256G     11T     7.4    yuqiwang
+cu27  48   2.5   512G    500G     7.6    qingchun
+cu28  24   2.5    64G    441G     7.6    organic
+cu29  24   2.5    64G    440G     7.0    wtzou
+cu30  24   2.5    64G    440G     6.8    organic
+cu31  48   2.5   512G    500G     7.6    duan
+cu32  24   2.5   128G    441G     7.4    yuqiwang
+cu33  24   2.5   128G    440G     7.4    wtzou
+cu34  24   2.5   128G    440G     7.4    wtzou
+cu35  16   3.2   512G    1.1T     7.5    qingchun
+cu36  28   2.6   256G    892G     7.4    qingchun
+cu37  28   2.6   256G    892G     7.4    jxzou
+cu38  24   2.3   384G    15T      7.6    jxzou
+cu39  24   2.3   384G    15T      7.6    qingchun
+cu40  24   2.3   192G    15T      7.6    fufangjia
+cu42 128   2.0   503G    881G     7.8
+cu43 128   2.0   755G    881G     7.8
+cu44 128   2.0   755G    881G     7.8
+--------------------------------------------------
+

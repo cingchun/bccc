@@ -1,0 +1,11 @@
+%nprocshared=4
+%mem=24GB
+%chk=He2_opt.chk
+# opt freq b3lyp/cc-pVDZ 6D
+
+3-21g 3-21g 6D meta_Lowdin trans_dipo
+
+0 1
+ He                 0.10963442   -0.00636036    0.04972571
+ He                -2.19756530   -0.15917267   -0.90078880
+

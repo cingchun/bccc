@@ -1,0 +1,105 @@
+% Derivation of GVB-LCC
+%!TEX program = xelatex
+%!TEX root = C:\Users\Qingchun Wang\Documents\PyCharmProjects\pyscf-1.5.3\pyscf\bccc\GVB-LCC.tex
+
+\documentclass[14pt]{article}
+% \usepackage{geometry}
+% \geometry{left=2cm,right=2cm,top=1cm,bottom=1cm}
+% \geometry{a4paper,scale=0.8}
+\usepackage[a4paper,hmargin=1.25in,vmargin=1in]{geometry}
+% \hfuzz=\maxdimen
+% \tolerance=10000
+% \hbadness=10000
+\usepackage{setspace, amsmath, amsfonts}
+\begin{document}
+    \title{Derivation of formula for GVB-LCC}
+    \author{Qingchun Wang}
+    \maketitle
+    \centerline{Nanjing Univ}
+    \centerline{qingchun720@foxmil.com}
+
+
+    \newpage
+    \noindent
+    \linespread{2.0}\selectfont
+    \setlength{\parskip}{0.5\baselineskip}
+    GVB-BCCC wave function:$\Psi^{GVB-BCCC}=e^{\hat{T}}\vert\Phi _{0}^{}\rangle$,
+    $\Phi_{0}^{}$ is GVB wave function
+    \newline
+    $
+        \hat{H}\Psi^{GVB-BCCC}=E\Psi^{GVB-BCCC}\Rightarrow
+        \hat{H}e^{\hat{T}}\vert\Phi _{0}^{}\rangle=Ee^{\hat{T}}\vert\Phi _{0}^{}\rangle\Rightarrow
+        e^{\hat{-T}}\hat{H}e^{\hat{T}}\vert\Phi _{0}^{}\rangle=E\vert\Phi _{0}^{}\rangle
+    $
+    \newline
+    $\left\{
+        \begin{aligned}
+            &\langle\Phi_{0}^{}\vert{e}^{\hat{-T}}\hat{H}e^{\hat{T}}\vert\Phi _{0}^{}\rangle=E \qquad\text{Energy equation}\\
+            &\langle\Phi_{a}^{}\vert{e}^{\hat{-T}}\hat{H}e^{\hat{T}}\vert\Phi _{0}^{}\rangle=0 \qquad\text{Amplitude Equation}
+        \end{aligned}
+    \right.$
+    \newline
+    where $\vert\Phi_{a}^{}\rangle$ is $a$th excited state, and excited states
+    \newline
+    $\psi_{A}^{}=\hat{T}\Phi _{0}^{}=\displaystyle\sum_{a=1}^{n_{A}}t_{a}\vert\Phi_{a}^{}\rangle$
+    \newline
+    \newline
+    linear CC expansion: $e^{\hat{-T}}\hat{H}e^{\hat{T}}=\hat{H}+[\hat{H},\hat{T}]\qquad [\hat{H},\hat{T}]=\hat{H}\hat{T}-\hat{T}\hat{H}$
+    \newline
+    $
+        E=\langle\Phi_{0}^{}\vert{e}^{\hat{-T}}\hat{H}e^{\hat{T}}\vert\Phi _{0}^{}\rangle =\langle\Phi _{0}^{}\vert\hat{H}+\left[\hat{H},\hat{T}\right]\vert\Phi _{0}^{}\rangle \\
+        =\langle\Phi _{0}^{}\vert\hat{H}\vert\Phi _{0}^{}\rangle+\langle\Phi _{0}^{}\vert\left[\hat{H},\hat{T}\right]\vert\Phi_{0}^{}\rangle
+        =\langle\Phi _{0}^{}\vert\hat{H}\vert\Phi _{0}^{}\rangle+\langle\Phi _{0}^{}\vert\hat{H}\hat{T}\vert\Phi _{0}^{}\rangle-\langle\Phi _{0}^{}\vert\hat{T}\hat{H}\vert\Phi _{0}^{}\rangle \\
+        =\langle\Phi _{0}^{}\vert\hat{H}\vert\Phi _{0}^{}\rangle+\langle\Phi _{0}^{}\vert\hat{H}\hat{T}\vert\Phi _{0}^{}\rangle
+        =\langle\Phi _{0}^{}\vert\hat{H}\vert\Phi _{0}^{}\rangle+\langle\Phi _{0}^{}\vert\hat{H}\vert\psi _{A}^{}\rangle \\
+        =E_{0}+\displaystyle\sum_{a=1}^{n_{A}}t_{a}\langle\Phi _{0}^{}\vert \hat{H}\vert\Phi _{a}^{}\rangle
+    $
+    \newline
+    Correlation Energy:
+    $\Delta{E}=E-E_{0}=\displaystyle\sum_{a=1}^{n_{A}}t_{a}\langle\Phi _{0}^{}\vert \hat{H}\vert\Phi _{a}^{}\rangle$
+    \newline
+    \newline
+    $
+        0=\langle\Phi _{a}^{}\vert e^{\hat{-T}}\hat{H}e^{\hat{T}}\vert\Phi _{0}^{}\rangle
+        =\langle\Phi _{a}^{}\vert \left[\hat{H},\hat{T}\right]\vert\Phi _{0}^{}\rangle \\
+        =\langle\Phi _{a}^{}\vert \hat{H}\vert\Phi _{0}^{}\rangle+\langle\Phi _{a}^{}\vert \hat{H}\hat{T}\vert\Phi _{0}^{}\rangle-\langle\Phi _{a}^{}\vert \hat{T}\hat{H}\vert\Phi _{0}^{}\rangle \\
+        =\langle\Phi _{a}^{}\vert \hat{H}\vert\Phi _{0}^{}\rangle+\langle\Phi _{a}^{}\vert \hat{H}\vert\psi _{A}^{}\rangle-\langle\Phi _{a}^{}\vert \hat{T}\hat{H}\vert\Phi _{0}^{}\rangle \\
+        =\langle\Phi _{a}^{}\vert \hat{H}\vert\Phi _{0}^{}\rangle+\displaystyle\sum_{b=1}^{n_{A}}t_{b}\langle\Phi _{a}^{}\vert \hat{H}\vert\Phi_{b}^{}\rangle
+            -\langle\Phi _{a}^{}\vert \hat{T}\hat{H}\vert\Phi _{0}^{}\rangle
+    $
+    \newline
+    \newline
+    $
+        \langle\Phi _{a}^{}\vert \hat{T}\hat{H}\vert\Phi _{0}^{}\rangle
+            =\langle\Phi _{a}^{}\vert \hat{T}
+                \left(\displaystyle\sum_{b\neq 0}^{n_{A}}\vert\Phi_{b}^{} \rangle\langle\Phi_{b}^{}\vert+\vert\Phi _{0}^{} \rangle\langle\Phi _{0}^{}\vert\right)
+                \hat{H}\vert\Phi _{0}^{}\rangle \\
+            =\langle\Phi _{a}^{}\vert \hat{T}\displaystyle\sum_{b\neq 0}^{n_{A}}\vert\Phi_{b}^{} \rangle\langle\Phi_{b}^{}\vert\hat{H}\vert\Phi _{0}^{}\rangle
+                +\langle\Phi _{a}^{}\vert \hat{T}\vert\Phi _{0}^{} \rangle\langle\Phi _{0}^{}\vert\hat{H}\vert\Phi _{0}^{}\rangle \\
+            =\displaystyle\sum_{b\neq 0}^{n_{A}}\langle\Phi _{a}^{}\vert \hat{T}\vert\Phi_{b}^{} \rangle\langle\Phi_{b}^{}\vert\hat{H}\vert\Phi _{0}^{}\rangle
+                +E_{0}^{}\langle\Phi _{a}^{}\vert\hat{T}\vert\Phi _{0}^{}\rangle
+    $
+
+
+    \newpage
+    \noindent
+    Based on spin orbital:
+    $\hat{H} = \displaystyle\sum_{pq}^{}\langle{p}\vert{h}\vert{q}\rangle{p}^{+}{q} + \frac{1}{2}\displaystyle\sum_{pqrs}^{}\langle{pq}\vert{rs}\rangle{p}^{+}{q}^{+}{sr}$ \\
+    $\hat{H} = \displaystyle\sum_{pq}^{}\langle{p}\vert{h}\vert{q}\rangle{q}^{+}{q} + \frac{1}{4}\displaystyle\sum_{pqrs}^{}\langle{pq}\vert{}\vert{rs}\rangle{p}^{+}{q}^{+}{sr}$ \\
+    $\hat{H}_{N} = \displaystyle\sum_{pq}^{}\langle{p}\vert{f}\vert{q}\rangle{q}^{+}{q} + \frac{1}{4}\displaystyle\sum_{pqrs}^{}\langle{pq}\vert{}\vert{rs}\rangle{p}^{+}{q}^{+}{sr}$ \\
+    \newline
+    Based on space orbital: \\
+    $\hat{H} = \displaystyle\sum_{pq}^{}{\displaystyle\sum_{\lambda}^{}{\langle{p}\vert{h}\vert{q}\rangle{p}_{\lambda}^{+}{q}_{\lambda}^{}}}
+             + \frac{1}{4}\displaystyle\sum_{pqrs}^{}\displaystyle\sum_{\lambda\sigma}^{}\langle{pq}\vert{}\vert{rs}\rangle{p}_{\lambda}^{+}{q}_{\sigma}^{+}{s}_{\sigma}{r}_{\lambda} \\
+             = \displaystyle\sum_{{p}_{\alpha}^{}{q}_{\alpha}^{}}^{}{\langle{p}\vert{h}\vert{q}\rangle{p}_{\alpha}^{+}{q}_{\alpha}^{-}}
+             + \displaystyle\sum_{{p}_{\beta}^{}{q}_{\beta}^{}}^{}{\langle{p}\vert{h}\vert{q}\rangle{p}_{\beta}^{+}{q}_{\beta}^{-}} \\
+             + \frac{1}{4}\displaystyle\sum_{{p}_{\alpha}^{}{q}_{\alpha}^{}{r}_{\alpha}^{}{s}_{\alpha}^{}}^{}{\langle{pq}\vert{}\vert{rs}\rangle{p}_{\alpha}^{+}{q}_{\alpha}^{+}{s}_{\alpha}^{-}{r}_{\alpha}^{-}}
+             + \frac{1}{4}\displaystyle\sum_{{p}_{\beta}^{}{q}_{\beta}^{}{r}_{\beta}^{}{s}_{\beta}^{}}^{}{\langle{pq}\vert{}\vert{rs}\rangle{p}_{\beta}^{+}{q}_{\beta}^{+}{s}_{\beta}^{-}{r}_{\beta}^{-}}
+             + \displaystyle\sum_{{p}_{\alpha}^{}{q}_{\beta}^{}{r}_{\alpha}^{}{s}_{\beta}^{}}^{}{\langle{pq}\vert{}\vert{rs}\rangle{p}_{\alpha}^{+}{q}_{\beta}^{+}{s}_{\beta}^{-}{r}_{\alpha}^{-}}
+
+
+    $ \\
+    \newline
+
+
+\end{document}

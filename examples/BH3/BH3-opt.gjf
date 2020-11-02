@@ -1,0 +1,18 @@
+%nprocshared=4
+%mem=30GB
+%chk=BH3-opt.chk
+# opt(z-matrix) freq b3lyp/cc-pvdz
+
+Title Card Required
+
+0 1
+ B              
+ H                  1            B1
+ H                  1            B1    2            A1
+ H                  1            B1    2            A2    3            D1    0
+
+   B1             1.18000000
+   A1           119.99999991
+   A2           120.00000016
+   D1           180.00000000
+

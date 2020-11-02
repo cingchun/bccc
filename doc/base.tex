@@ -1,0 +1,79 @@
+% Foundation of GVB-BCCC formula derivation
+
+
+\documentclass[14pt]{article}
+\usepackage[a4paper,hmargin=1.25in,vmargin=1in]{geometry}
+\usepackage{setspace, amsmath, amsfonts}
+
+
+\begin{document}
+    \title{Foundation of GVB-BCCC formula derivation}
+    \author{Qingchun Wang}
+    \maketitle
+    \centerline{Nanjing Univ}
+    \centerline{qingchun720@foxmail.com}
+    
+    \linespread{2.0}\selectfont
+    \thispagestyle{empty}
+    
+    \newpage
+    \setlength{\parindent}{0pt}
+    \setcounter{page}{1}
+    
+    A block has 16 states: ${P}_{0},{P}_{1},{P}_{2},{P}_{3},{P}_{4},{P}_{5},{P}_{6},{P}_{7},{P}_{8},{P}_{9},{P}_{10},{P}_{11},{P}_{12},{P}_{13},{P}_{14},{P}_{15}. $ \\ 
+    Each state corresponds to a functor in essence: \\ 
+    0: $\hat{0}_{\alpha}^{+}\hat{0}_{\beta}^{+} $ \\ 
+    1: $\hat{1}_{\alpha}^{+}\hat{1}_{\beta}^{+} $ \\ 
+    2: $\hat{0}_{\alpha}^{+}\hat{1}_{\beta}^{+} $ \\ 
+    3: $\hat{0}_{\beta}^{+}\hat{1}_{\alpha}^{+} $ \\ 
+    4: $\hat{0}_{\alpha}^{+}\hat{1}_{\alpha}^{+} $ \\ 
+    5: $\hat{0}_{\beta}^{+}\hat{1}_{\beta}^{+} $ \\ 
+    6: $ $ \\ 
+    7: $\hat{0}_{\alpha}^{+} $ \\ 
+    8: $\hat{1}_{\alpha}^{+} $ \\ 
+    9: $\hat{0}_{\beta}^{+} $ \\ 
+    10: $\hat{1}_{\beta}^{+} $ \\ 
+    11: $\hat{0}_{\alpha}^{+}\hat{0}_{\beta}^{+}\hat{1}_{\alpha}^{+} $ \\ 
+    12: $\hat{0}_{\alpha}^{+}\hat{1}_{\alpha}^{+}\hat{1}_{\beta}^{+} $ \\ 
+    13: $\hat{0}_{\alpha}^{+}\hat{0}_{\beta}^{+}\hat{1}_{\beta}^{+} $ \\ 
+    14: $\hat{0}_{\beta}^{+}\hat{1}_{\alpha}^{+}\hat{1}_{\beta}^{+} $ \\ 
+    15: $\hat{0}_{\alpha}^{+}\hat{0}_{\beta}^{+}\hat{1}_{\alpha}^{+}\hat{1}_{\beta}^{+} $ \\ 
+    
+    However, a functor is often expressed as a linear combination of a number of states: \\ 
+    0: $\hat{0}_{\alpha}^{+}\hat{0}_{\beta}^{+} = {{inv}_{0,0}{P}_{0}}+{{inv}_{0,1}{P}_{1}} $ \\ 
+    1: $\hat{1}_{\alpha}^{+}\hat{1}_{\beta}^{+} = {{inv}_{1,0}{P}_{0}}+{{inv}_{1,1}{P}_{1}} $ \\ 
+    2: $\hat{0}_{\alpha}^{+}\hat{1}_{\beta}^{+} = {{inv}_{2,2}{P}_{2}}+{{inv}_{2,3}{P}_{3}} $ \\ 
+    3: $\hat{0}_{\beta}^{+}\hat{1}_{\alpha}^{+} = {{inv}_{3,2}{P}_{2}}+{{inv}_{3,3}{P}_{3}} $ \\ 
+    4: $\hat{0}_{\alpha}^{+}\hat{1}_{\alpha}^{+} = {1{P}_{4}} $ \\ 
+    5: $\hat{0}_{\beta}^{+}\hat{1}_{\beta}^{+} = {1{P}_{5}} $ \\ 
+    6: $ = {1{P}_{6}} $ \\ 
+    7: $\hat{0}_{\alpha}^{+} = {1{P}_{7}} $ \\ 
+    8: $\hat{1}_{\alpha}^{+} = {1{P}_{8}} $ \\ 
+    9: $\hat{0}_{\beta}^{+} = {1{P}_{9}} $ \\ 
+    10: $\hat{1}_{\beta}^{+} = {1{P}_{10}} $ \\ 
+    11: $\hat{0}_{\alpha}^{+}\hat{0}_{\beta}^{+}\hat{1}_{\alpha}^{+} = {1{P}_{11}} $ \\ 
+    12: $\hat{0}_{\alpha}^{+}\hat{1}_{\alpha}^{+}\hat{1}_{\beta}^{+} = {1{P}_{12}} $ \\ 
+    13: $\hat{0}_{\alpha}^{+}\hat{0}_{\beta}^{+}\hat{1}_{\beta}^{+} = {1{P}_{13}} $ \\ 
+    14: $\hat{0}_{\beta}^{+}\hat{1}_{\alpha}^{+}\hat{1}_{\beta}^{+} = {1{P}_{14}} $ \\ 
+    15: $\hat{0}_{\alpha}^{+}\hat{0}_{\beta}^{+}\hat{1}_{\alpha}^{+}\hat{1}_{\beta}^{+} = {1{P}_{15}} $ \\ 
+    
+    Therefore, the composition of each state can be written: \\ 
+    ${P}_{0} = {{ci}_{0,0}\hat{0}_{\alpha}^{+}\hat{0}_{\beta}^{+}}+{{ci}_{0,1}\hat{1}_{\alpha}^{+}\hat{1}_{\beta}^{+}} \quad \vert{vac}\rangle $ \\ 
+    ${P}_{1} = {{ci}_{1,0}\hat{0}_{\alpha}^{+}\hat{0}_{\beta}^{+}}+{{ci}_{1,1}\hat{1}_{\alpha}^{+}\hat{1}_{\beta}^{+}} \quad \vert{vac}\rangle $ \\ 
+    ${P}_{2} = {{ci}_{2,2}\hat{0}_{\alpha}^{+}\hat{1}_{\beta}^{+}}+{{ci}_{2,3}\hat{0}_{\beta}^{+}\hat{1}_{\alpha}^{+}} \quad \vert{vac}\rangle $ \\ 
+    ${P}_{3} = {{ci}_{3,2}\hat{0}_{\alpha}^{+}\hat{1}_{\beta}^{+}}+{{ci}_{3,3}\hat{0}_{\beta}^{+}\hat{1}_{\alpha}^{+}} \quad \vert{vac}\rangle $ \\ 
+    ${P}_{4} = {1\hat{0}_{\alpha}^{+}\hat{1}_{\alpha}^{+}} \quad \vert{vac}\rangle $ \\ 
+    ${P}_{5} = {1\hat{0}_{\beta}^{+}\hat{1}_{\beta}^{+}} \quad \vert{vac}\rangle $ \\ 
+    ${P}_{6} = {1} \quad \vert{vac}\rangle $ \\ 
+    ${P}_{7} = {1\hat{0}_{\alpha}^{+}} \quad \vert{vac}\rangle $ \\ 
+    ${P}_{8} = {1\hat{1}_{\alpha}^{+}} \quad \vert{vac}\rangle $ \\ 
+    ${P}_{9} = {1\hat{0}_{\beta}^{+}} \quad \vert{vac}\rangle $ \\ 
+    ${P}_{10} = {1\hat{1}_{\beta}^{+}} \quad \vert{vac}\rangle $ \\ 
+    ${P}_{11} = {1\hat{0}_{\alpha}^{+}\hat{0}_{\beta}^{+}\hat{1}_{\alpha}^{+}} \quad \vert{vac}\rangle $ \\ 
+    ${P}_{12} = {1\hat{0}_{\alpha}^{+}\hat{1}_{\alpha}^{+}\hat{1}_{\beta}^{+}} \quad \vert{vac}\rangle $ \\ 
+    ${P}_{13} = {1\hat{0}_{\alpha}^{+}\hat{0}_{\beta}^{+}\hat{1}_{\beta}^{+}} \quad \vert{vac}\rangle $ \\ 
+    ${P}_{14} = {1\hat{0}_{\beta}^{+}\hat{1}_{\alpha}^{+}\hat{1}_{\beta}^{+}} \quad \vert{vac}\rangle $ \\ 
+    ${P}_{15} = {1\hat{0}_{\alpha}^{+}\hat{0}_{\beta}^{+}\hat{1}_{\alpha}^{+}\hat{1}_{\beta}^{+}} \quad \vert{vac}\rangle $ \\ 
+    
+\end{document}
+
